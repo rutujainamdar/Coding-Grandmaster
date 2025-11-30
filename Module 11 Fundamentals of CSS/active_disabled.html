@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active and Disabled Example</title>
+
+    <style>
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #333;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        /* Active state */
+        .btn:active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Disabled state */
+        .btn:disabled {
+            background-color: #ccc;
+            color: #666;
+            border-color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Active and Disabled Buttons</h2>
+
+    <button class="btn">Normal Button</button>
+    <button class="btn" disabled>Disabled Button</button>
+</body>
+</html>
